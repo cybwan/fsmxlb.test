@@ -28,8 +28,8 @@ depends: install-latest-docker install-test-depends pipy
 
 .PHONY: docker-fsmxlb
 docker-fsmxlb:
-	docker pull cybwan/fsmxlb:latest
-	docker run -u root --cap-add SYS_ADMIN --restart unless-stopped --privileged -dit -v /dev/log:/dev/log --name fsmxlb cybwan/fsmxlb:latest
+	docker pull cybwan/fsm-xlb:latest
+	docker run -u root --cap-add SYS_ADMIN --restart unless-stopped --privileged -dit -v /dev/log:/dev/log --name fsmxlb cybwan/fsm-xlb:latest
 
 .PHONY: simple-topo
 simple-topo:
