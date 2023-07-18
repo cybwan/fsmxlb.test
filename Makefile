@@ -31,8 +31,8 @@ docker-fsmxlb:
 	docker pull cybwan/fsmxlb:latest
 	docker run -u root --cap-add SYS_ADMIN --restart unless-stopped --privileged -dit -v /dev/log:/dev/log --name fsmxlb cybwan/fsmxlb:latest
 
-.PHONY: simple
-simple:
+.PHONY: simple-topo
+simple-topo:
 	scripts/simple-test-topology.sh
 
 .PHONY: simple-clean

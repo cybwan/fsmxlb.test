@@ -27,7 +27,7 @@ make docker-fsmxlb
 ## 部署测试拓扑环境
 
 ```bash
-make simple
+make simple-topo
 ```
 
 ## 执行测试
